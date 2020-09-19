@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/phone.css">
+
+
+</head>
+<body>
+<fieldset style="border: black 1px solid;width: 400px;height: 700px;float: left">
+    <h1 id="nokia">nokia</h1>
+    manhinh:<h4 id="screen1"></h4>
+    noisoanTinNhan:<input id="write1">
+    <br>
+    <br>
+    <br>
+    <button id="send1" onclick="nokia.guitinnhan(iphone,document.getElementById('write1').value)">guiTinNhan</button>
+    <button id="inbox1" onclick="showinbox1()">xemInbox</button>
+    <button id="xemtindagui1" onclick="showtindagui1()">xemTindagui</button>
+    <button id="may1" onclick="nokia.onOff()">bat_tat</button>
+</fieldset>
+<fieldset style="border: black 1px solid;width: 400px;height: 700px;float: left">
+    <h1 id="iphone">Iphone</h1>
+    manhinh:<h4 id="screen2"></h4>
+    noisoanTinNhan:<input id="write2">
+    <br>
+    <br>
+    <br>
+    <button id="send2" onclick="iphone.guitinnhan(nokia,document.getElementById('write2').value)">guiTinNhan</button>
+    <button id="inbox2" onclick="showinbox2()">xemInbox</button>
+    <button id="xemtindagui2" onclick="showtindagui2()">xemTindagui</button>
+    <button id="may2" onclick="iphone.onOff()">bat_tat</button>
+</fieldset>
+<script src="js/js.js"></script>
+
+
+</body>
+</html>
